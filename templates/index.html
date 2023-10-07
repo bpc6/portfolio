@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan Covell</title>
+    <!-- Add your CSS stylesheets and other meta tags here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <img src="{{ url_for('static', filename='images/beach_profile.jpeg') }}" alt="Profile Picture" class="profile-photo">
+        <div class="profile-text">
+            <h1>Bryan Covell</h1>
+            <p>Discover my work, skills, and achievements.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Bryan Covell</p>
+    </footer>
+
+    <!-- Add your JavaScript scripts and other resources here -->
+</body>
+</html>
