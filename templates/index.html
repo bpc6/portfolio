@@ -10,29 +10,36 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Home button on the left -->
+            <a class="navbar-brand" href="/">Bryan Covell</a>
 
-    <section class="container profile">
+            <!-- Space for tabs on the right (placeholder) -->
+            <div class="navbar-collapse justify-content-end">
+                <!-- Tabs will go here -->
+            </div>
+        </div>
+    </nav>
+
+    <section class="container profile mx-auto">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col text-center">
                 <img src="{{ url_for('static', filename='images/beach_profile.jpeg') }}" alt="Profile Picture" class="img-fluid rounded-circle" style="max-width: 500px; max-height: 500px;">
             </div>
-            <div class="col-md-6">
-                <h1>Bryan Covell</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <h1 class="mt-4">Bryan Covell</h1>
                 <p>{{ bio_content }}</p>
             </div>
         </div>
     </section>
 
-<!--    <footer>-->
-<!--        <p>&copy; 2023 Bryan Covell</p>-->
-<!--    </footer>-->
+
+    <footer class="fixed-bottom">
+        <p>&copy; 2023 Bryan Covell</p>
+    </footer>
 
 </body>
 </html>
