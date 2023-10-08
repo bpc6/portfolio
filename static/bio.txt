@@ -1,0 +1,6 @@
+Hey there, welcome to my site! I'm a software engineer specialized in motion planning & controls, expert systems, and reinforcement learning.
+
+I'm interested in writing software that interacts with the physical world, whether that's a robot operating within its
+environment or a model of an interesting dynamical system.
+
+Feel free to look around my portfolio to see what I've been up to.
