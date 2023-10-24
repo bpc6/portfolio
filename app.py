@@ -15,13 +15,14 @@ def experience():
     return render_template("experience.html")
 
 
-# @app.route('/projects')
-# def projects():
-#     return render_template('projects.html')
-#
-# @app.route('/learning')
-# def education():
-#     return render_template('learning.html')
+@app.route("/projects")
+def projects():
+    return render_template("projects.html")
+
+
+@app.route("/learning")
+def education():
+    return render_template("learning.html")
 
 
 if __name__ == "__main__":
