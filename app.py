@@ -3,15 +3,17 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def home():
-    with open('static/bio.txt', 'r') as bio_file:
+    with open("static/bio.txt", "r") as bio_file:
         bio_content = bio_file.read()
-    return render_template('index.html', bio_content=bio_content)
+    return render_template("index.html", bio_content=bio_content)
 
-@app.route('/experience')
+
+@app.route("/experience")
 def experience():
-    return render_template('experience.html')
+    return render_template("experience.html")
+
 
 # @app.route('/projects')
 # def projects():
@@ -22,5 +24,5 @@ def experience():
 #     return render_template('learning.html')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)

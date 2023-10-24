@@ -1,12 +1,15 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="container profile">
-    <div class="col text-center">
-        <img src="{{ url_for('static', filename='images/beach_profile.jpeg') }}" alt="Profile Picture" class="img-fluid rounded-circle my-3" style="max-width: 500px; max-height: 500px;">
+  <div class="col text-center">
+    <img
+      src="{{ url_for('static', filename='images/beach_profile.jpeg') }}"
+      alt="Profile Picture"
+      class="img-fluid rounded-circle my-3"
+      style="max-width: 500px; max-height: 500px"
+    />
 
-        <h1 class="mt-0">Bryan Covell</h1>
-        <p>{{ bio_content }}</p>
-    </div>
+    <h1 class="mt-0">Bryan Covell</h1>
+    <p>{{ bio_content }}</p>
+  </div>
 </div>
 {% endblock %}
