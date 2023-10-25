@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from markdown import markdown
 
 app = Flask(__name__)
 
@@ -12,7 +13,10 @@ def home():
 
 @app.route("/experience")
 def experience():
-    return render_template("experience.html")
+    with open("static/markdown/experience.md", "r") as f:
+        md_content = f.read()
+    html_content = markdown(md_content)
+    return render_template("experience.html", html_content=html_content)
 
 
 @app.route("/projects")
